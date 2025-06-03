@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonios - Lola de Luna</title>
     <link rel="stylesheet" href="/Css/Style.css" />
+    <link rel="stylesheet" href="/Css/StyleTes.css">
     <link rel="icon" href="/Imagenes/Logo.png" />
 </head>
 <body>
@@ -25,8 +26,58 @@
                 <li><a href="Testimonios.html">Testimonios</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
-
         </nav>
     </header>
+    <body class="p-4">
+  <!-- Sección de testimonios -->
+  <div id="seccionTestimonios">
+    <h2 class="mb-4">Testimonios</h2>
+    <div class="testimonio-card">
+      <strong>Jesús Domingo Araiza Guzmán</strong>
+      <p class="mb-1">Antes de conocer OMNILIFE...</p>
+      <div>⭐ ⭐ ⭐ ⭐ ☆</div>
+    </div>
+
+    <div class="testimonio-card">
+      <strong>Rodolfo Raymundo Bastida</strong>
+      <p class="mb-1">OMNILIFE cambió mi estilo de vida...</p>
+      <div>⭐ ⭐ ⭐ ⭐ ⭐</div>
+    </div>
+
+    <button class="btn btn-primary mt-3" onclick="mostrarFormulario()">Agregar mi testimonio</button>
+  </div>
+
+  <!-- Formulario oculto -->
+  <div id="formularioTestimonio" class="d-none">
+    <h2 class="mb-4">Agregar Testimonio</h2>
+    <form onsubmit="return enviarTestimonio()">
+      <div class="mb-3">
+        <label>Calificación del producto:</label><br>
+        <span class="estrella">⭐ ⭐ ⭐ ⭐ ⭐</span>
+      </div>
+      <div class="mb-3">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Correo Electrónico:</label>
+        <input type="email" id="correo" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Mensaje del testimonio:</label>
+        <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Enviar testimonio</button>
+    </form>
+  </div>
+  <footer>
+        <p>Este sitio no pertenece a Omnilife ni Seytú. <br />Es una distribuidora independiente.</p>
+        <p>© 2025 Nombre de la Distribuidora. Todos los derechos reservados.</p>
+        <p>
+            <a href="mailto:lolilifedeluna@hotmail.com">📧 lolilifedeluna@hotmail.com</a><br />
+            Jalostotitlán, Jalisco
+        </p>
+    </footer>
+    <script src="/Js/Tes.js"></script>
 </body>
 </html>
