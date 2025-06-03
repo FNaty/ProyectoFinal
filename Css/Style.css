@@ -5,29 +5,27 @@
   box-sizing: border-box;
 }
 
+header, .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2e004f;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 body {
+  margin-top: 100px; /* Ajustar según altura header */
   font-family: 'Segoe UI', sans-serif;
   color: white;
   background-color: #1e0c2b;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; 
-
-}
-/* Menú de navegación */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #2e004f;
-  padding: 10px 20px;
-  flex-wrap: wrap;
-}
 
 .logo {
   width: 50px;
