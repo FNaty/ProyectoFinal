@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnilife - Lola de Luna</title>
+    <link rel="stylesheet" href="/Css/Style.css" />
+    <link rel="stylesheet" href="/Css/Productos.css" />
+    <link rel="icon" href="/Imagenes/Logo.png" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/Imagenes/Logo.png" alt="Logo Lola" class="logo" />
+            <h1 class="brand">Lola de Luna</h1>
+            <div class="menu-toggle">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#">Productos ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="ProOmn.html">Omnilife</a></li>
+                        <li><a href="ProSey.html">Seytú</a></li>
+                    </ul>
+                </li>
+                <li><a href="Testimonios.html">Testimonios</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="productos-container">
+        <h2 class="titulo-seccion">Productos Omnilife</h2>
+        <div class="productos-grid">
+            <!-- Repite este bloque para cada producto -->
+            <div class="producto" onclick="abrirModal('modal1')">
+                <img src="#" alt="Producto 1">
+                <h3>Nombre del Producto</h3>
+                <p>Descripción breve...</p>
+            </div>
+
+            <div class="producto" onclick="abrirModal('modal2')">
+                <img src="#" alt="Producto 2">
+                <h3>Otro Producto</h3>
+                <p>Descripción breve...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+            <h2>Nombre del Producto</h2>
+            <img src="#" alt="Producto en grande">
+            <p>Descripción detallada, beneficios, ingredientes, precio, etc.</p>
+            <p class="precio">$000.00</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+            <h2>Nombre del Otro Producto</h2>
+            <img src="#" alt="Producto en grande">
+            <p>Descripción detallada, beneficios, ingredientes, precio, etc.</p>
+            <p class="precio">$000.00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="Prod.js"></script>
+</body>
+
+</html>
