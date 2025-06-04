@@ -5,19 +5,24 @@
   box-sizing: border-box;
 }
 
-header, .navbar {
+header {
+  all: unset; /* Reinicia todos los estilos heredados */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2e004f;
   z-index: 1000;
+}
+
+.barra-navegacion {
+  background-color: #2e004f;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 body {
   margin-top: 100px; /* Ajustar según altura header */
