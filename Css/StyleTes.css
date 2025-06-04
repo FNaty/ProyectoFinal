@@ -1,16 +1,16 @@
 .testimonio-card {
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
 
-    .estrella {
-      color: gold;
-      font-size: 1.2rem;
-    }
+.estrella {
+    color: gold;
+    font-size: 1.2rem;
+}
 
-    .d-none {
-      display: none !important;
-    }
+.d-none {
+    display: none !important;
+}

@@ -1,0 +1,13 @@
+.icono {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    .btn-personalizado {
+      background-color: #6a0dad;
+      color: white;
+    }
+
+    .btn-personalizado:hover {
+      background-color: #5500aa;
+    }
