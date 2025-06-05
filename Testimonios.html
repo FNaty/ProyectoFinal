@@ -31,60 +31,81 @@
       </ul>
     </nav>
   </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="seccionTestimonios">
-      <h2 class="mb-4">Testimonios</h2>
-      <div class="testimonio-card">
-        <strong>Jesús Domingo Araiza Guzmán</strong>
-        <p class="mb-1">Antes de conocer OMNILIFE...</p>
-        <div>⭐ ⭐ ⭐ ⭐ ☆</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="seccionTestimonios">
+    <h2 class="mb-4">Testimonios</h2>
+    <div class="testimonio mb-4 card">
+      <div class="card-body">
+        <div class="d-flex">
+          <img src="https://wallpapers.com/images/featured/hombres-guapos-nkg23ysu4ko22459.jpg" alt="avatar1.png"
+            class="rounded-circle" width="45px">
+          <div class="ml-2">
+            <h5>Jesús Domingo Araiza Guzmán</h5>
+            <div class="estrellas" id="estrellas-1">
+              <span class="estrella">⭐ ⭐ ⭐ ⭐ ⭐</span>
+            </div>
+          </div>
+        </div>
+        <p class="mt-2">Antes de conocer OMNILIFE estaba superando una enfermedad, los jugos que ofrecen me
+          dieron mucha energía, me ayudaron a fortalecerme, así fue fácil llegar a donde estoy ahora con
+          mi salud.</p>
       </div>
-
-      <div class="testimonio-card">
-        <strong>Rodolfo Raymundo Bastida</strong>
-        <p class="mb-1">OMNILIFE cambió mi estilo de vida...</p>
-        <div>⭐ ⭐ ⭐ ⭐ ⭐</div>
+    </div>
+    <div class="testimonio mb-4 card">
+      <div class="card-body">
+        <div class="d-flex">
+          <img src="https://www.okchicas.com/wp-content/uploads/2017/10/hombres-guapos-amsterdam.jpg" alt="avatar2.png"
+            class="rounded-circle" width="45px">
+          <div class="ml-2">
+            <h5>Rodolfo Raymundo Bastida Larrazábal</h5>
+            <div class="estrellas" id="estrellas-2">
+              <span class="estrella">⭐ ⭐ ⭐ ⭐ ⭐</span>
+            </div>
+          </div>
+        </div>
+        <p class="mt-2">OMNILIFE cambió la vida de mi familia. Ahora que conocemos OMNILIFE y también SEYTÚ,
+          estoy convencido de que, además de salud, tenemos una mejor calidad de vida.</p>
       </div>
-
-      <button class="btn btn-primary mt-3" onclick="mostrarFormulario()">Agregar mi testimonio</button>
     </div>
-
-    <!-- Formulario oculto -->
-    <div id="formularioTestimonio" class="d-none">
-      <h2 class="mb-4">Agregar Testimonio</h2>
-      <form onsubmit="return enviarTestimonio()">
-        <div class="mb-3">
-          <label>Calificación del producto:</label><br>
-          <span class="estrella">⭐ ⭐ ⭐ ⭐ ⭐</span>
-        </div>
-        <div class="mb-3">
-          <label>Nombre:</label>
-          <input type="text" id="nombre" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label>Correo Electrónico:</label>
-          <input type="email" id="correo" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label>Mensaje del testimonio:</label>
-          <textarea id="mensaje" class="form-control" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark">Enviar testimonio</button>
-      </form>
-    </div>
-    <footer>
+    <button class="btn btn-primary mt-3 cta-button" onclick="mostrarFormulario()">Agregar mi testimonio</button>
+  </div>
+  <br>
+<footer>
         <p style="color: white;">Este sitio no pertenece a Omnilife ni Seytú. <br />Es una distribuidora independiente.</p>
-        <p style="color: white;">© 2025 Nombre de la Distribuidora. Todos los derechos reservados.</p>
+        <p style="color: white;">© 2025 Maria Dolores de Luna. Todos los derechos reservados.</p>
         <p style="color: white;">
             <a href="mailto:lolilifedeluna@hotmail.com">📧 lolilifedeluna@hotmail.com</a><br />
             Jalostotitlán, Jalisco
         </p>
     </footer>
-    <script src="Tes.js"></script>
-  
+  <!-- Formulario oculto -->
+  <div id="formularioTestimonio" class="d-none">
+    <h2 class="mb-4">Agregar Testimonio</h2>
+    <form onsubmit="return enviarTestimonio()">
+      <div class="mb-3">
+        <label>Calificación del producto:</label><br>
+        <span class="estrella">⭐ ⭐ ⭐ ⭐ ⭐</span>
+      </div>
+      <div class="mb-3">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Correo Electrónico:</label>
+        <input type="email" id="correo" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Mensaje del testimonio:</label>
+        <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Enviar testimonio</button>
+    </form>
+  </div>
+
 </body>
 <script src="Tes.js"></script>
+
 </html>
